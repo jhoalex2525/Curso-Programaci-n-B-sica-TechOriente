@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h3>Formularios</h3>
+    <h2>Formularios</h2>
     <form action="/submit">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre"><br><br>
@@ -17,58 +17,59 @@
         <input type="button" value="Enviar"><br><br>
         <input type="checkbox" value="Enviar">
     </form>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname">
+        <label for="msg">Mensaje:</label>
+        <textarea name="user_message" id="msg"></textarea>
+    </form>
+    <h2>Formulario organizado</h2>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname"><br><br>
+        <label for="msg">Mensaje:</label><br>
+        <textarea name="user_message" id="msg"></textarea><br><br>
+        <label for="recibir">¿Quieres recibir correo electrónico publicitario?</label><br><br>
+        <input type="radio" value="si" id="si" name="recibircorreo">
+        <label for="si">Si</label>
+        <input type="radio" value="no" id="no" name="recibircorreo">
+        <label for="no">No</label><br><br>
+        <input type="checkbox" value="politica" id="politica">
+        <label for="politica">¿Aceptas política de tratamiento de datos?</label><br><br>
+        <input type="checkbox" value="publicidad" id="publicidad">
+        <label for="publicidad">¿Autorizas que te contactemos en horario laboral?</label><br><br>
+        <input type="submit" value="Enviar"><br><br>
+    </form>
+    <h2>Tablas</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <h2>Listas</h2>
+    <ol>
+        <li>Eat</li>
+        <li>Code</li>
+        <li>Sleep</li>
+    </ol>
+    <ul>
+        <li>freeCodeCamp</li>
+        <li>CSS-Tricks</li>
+        <li>Traversy Media</li>
+    </ul>
 </body>
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" name="fname" id="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" name="lname" id="lname">
-    <label for="msg">Mensaje:</label>
-    <textarea name="user_message" id="msg"></textarea>
-</form>
-<h2>Formulario organizado</h2>
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" name="fname" id="fname"><br><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" name="lname" id="lname"><br><br>
-    <label for="msg">Mensaje:</label><br>
-    <textarea name="user_message" id="msg"></textarea><br><br>
-    <label for="recibir">¿Quieres recibir correo electrónico publicitario?</label><br><br>
-    <input type="radio" value="si" id="si" name="recibircorreo">
-    <label for="si">Si</label>
-    <input type="radio" value="no" id="no" name="recibircorreo">
-    <label for="no">No</label><br><br>
-    <input type="checkbox" value="politica" id="politica">
-    <label for="politica">¿Aceptas política de tratamiento de datos?</label><br><br>
-    <input type="checkbox" value="publicidad" id="publicidad">
-    <label for="publicidad">¿Autorizas que te contactemos en horario laboral?</label><br><br>
-    <input type="submit" value="Enviar"><br><br>
-</form>
-<h2>Tablas</h2>
-<table>
-    <tr>
-        <th>Nombre</th>
-        <th>Edad</th>
-    </tr>
-    <tr>
-        <td>Ana</td>
-        <td>23</td>
-    </tr>
-    <tr>
-        <td>Juan</td>
-        <td>30</td>
-    </tr>
-</table>
-<h2>Listas</h2>
-<ol>
-    <li>Eat</li>
-    <li>Code</li>
-    <li>Sleep</li>
-</ol>
-<ul>
-    <li>freeCodeCamp</li>
-    <li>CSS-Tricks</li>
-    <li>Traversy Media</li>
-</ul>
+
 </html>
