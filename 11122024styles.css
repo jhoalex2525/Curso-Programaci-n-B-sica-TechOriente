@@ -1,0 +1,41 @@
+p{
+    color: brown;
+}
+/* Estilo para formulario */
+.formulario{
+    border: solid 5px;
+    border-color: blue;
+    padding: 20px;
+}
+
+/* Justificar */
+#flex-start{    
+    justify-content: flex-start;
+    display: flex;
+}
+
+#center{
+    justify-content: center;
+    display: flex;
+}
+
+#flex-end{
+    justify-content: flex-end;
+    display: flex;
+}
+
+#space-between{
+    justify-content: space-between;
+    display: flex;
+}
+
+#space-around{
+    justify-content: space-around;
+    display: flex;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+}
