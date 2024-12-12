@@ -1,4 +1,51 @@
-#container > div{
-    background-color: blueviolet;
+body{
+    background-color: #AC4493;    
+}
+
+#container{
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.formulario{
     display: flex;
+    flex-direction: column;
+}
+.colorfucsia{
+    color: #AC4493;
+}
+
+h1,h5{
+    text-align: center;
+}
+
+label{
+    margin: 10px 0 5px;
+}
+
+.elementoinput{
+    width: 100%;
+    border-color: #AC4493;
+    border-width: 1px;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.botonenviar{
+    width: 100%;
+    padding: 5px;
+    border-width: 1px;
+}
+
+.obligatorios{
+    display: flex;    
+    font-size:12px;
+}
+
+.asterisco{
+    margin-right: 5px;    
 }
