@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .colorfucsia{
     color: #AC4493;
 }
@@ -60,6 +61,20 @@ label{
 
 .inicio{
     margin-bottom: 5px;
+}
+
+th, td{
+    text-align: start;
+}
+
+/* Estilos imagenes */
+.imagenredonda{
+    border-radius: 100%;
+}
+
+.imagen-centro{    
+    display: flexbox;
+    text-align: center;
 }
 
 /* iconos de google */
