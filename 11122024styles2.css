@@ -77,7 +77,11 @@ th, td{
     text-align: center;
 }
 
-.logosalesforce, .logocmmi{
+.logosalesforce{
+    width: 30%;
+}
+
+.logocmmi{
     width: 30%;
 }
 
