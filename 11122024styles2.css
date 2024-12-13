@@ -77,6 +77,10 @@ th, td{
     text-align: center;
 }
 
+.logosalesforce, .logocmmi{
+    width: 30%;
+}
+
 /* iconos de google */
 span.size-40 {
     font-size: 40px;
