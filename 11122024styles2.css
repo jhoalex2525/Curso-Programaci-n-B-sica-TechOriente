@@ -1,3 +1,4 @@
+/* Estilos generales */
 body{
     background-color: #AC4493;    
 }
@@ -56,3 +57,13 @@ label{
 .asteriscoobligatorio{
     margin-top: 14px !important;
 }
+
+.inicio{
+    margin-bottom: 5px;
+}
+
+/* iconos de google */
+span.size-40 {
+    font-size: 40px;
+    font-variation-settings: 'OPSZ' 40;
+  }
