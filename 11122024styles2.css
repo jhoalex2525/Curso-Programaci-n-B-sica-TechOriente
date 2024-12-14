@@ -4,7 +4,7 @@ body{
 }
 
 #container{
-    width: 33%;
+    width: 40%;
     background-color: white;
     margin: auto;
     border-radius: 5px;
@@ -72,17 +72,45 @@ th, td{
     border-radius: 100%;
 }
 
-.imagen-centro{    
+.imagen-perfil-centro{    
     display: flexbox;
-    text-align: center;
+    text-align: center;    
+}
+
+.imagen-logos-centro{    
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .logosalesforce{
-    width: 30%;
+    width: 100px;
 }
 
 .logocmmi{
-    width: 30%;
+    width: 160px;
+    vertical-align: auto;
+}
+
+.logocertificacionessalesforce{
+    width: 80px;
+}
+
+.logoceiba{
+    width: 150px;
+    vertical-align: auto;
+}
+.logoaireambiente{
+    width: 80px;
+    vertical-align: auto;
+}
+.logoprime{
+    width: 150px;
+    vertical-align: auto;
+}
+.logokyk{
+    width: 150px;
+    vertical-align: auto;
 }
 
 /* iconos de google */
