@@ -57,10 +57,15 @@ label{
 
 .asteriscoobligatorio{
     margin-top: 14px !important;
-}
+}s
 
 th, td{
     text-align: start;
+}
+
+table{
+    width: 100%;
+    border-spacing: 12px;
 }
 
 /* Estilos imagenes */
@@ -113,11 +118,12 @@ th, td{
 span.size-40 {
     font-size: 40px;
     font-variation-settings: 'OPSZ' 40;
+    margin: 20px 0px;
   }
 
 /* Media querys */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     #container{
-        width: 267.188px;
+        width: 300px;
         }
 }
