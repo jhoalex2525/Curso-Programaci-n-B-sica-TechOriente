@@ -114,6 +114,47 @@ table{
     vertical-align: auto;
 }
 
+.carousel{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-imagenes{
+    display: flex;
+    width: 100%;
+    animation: slide 12s infinite;
+}
+
+.carousel-imagenes img{
+    width: 50%;
+}
+
+@keyframes slide{
+    0% { transform: translateX(0%); }
+    16.67% { transform: translateX(0%); } /* Cada imagen se muestra 16.67% del tiempo total */
+    16.68% { transform: translateX(-100%); }
+    33.34% { transform: translateX(-100%); }
+    33.35% { transform: translateX(-200%); }
+    50% { transform: translateX(-200%); }
+    50.01% { transform: translateX(-300%); }
+    66.67% { transform: translateX(-300%); }
+    66.68% { transform: translateX(-400%); }
+    83.34% { transform: translateX(-400%); }
+    83.35% { transform: translateX(-500%); }
+    100% { transform: translateX(-500%); }
+}
+
+/* Estructura HTML: El HTML es bastante sencillo. Tenemos un contenedor div con clase carousel que envuelve otro div con clase carousel-images, el cual contiene las imágenes que queremos mostrar en el carrusel.
+
+Estilos CSS:
+
+Contenedor del carrusel: La clase .carousel tiene overflow: hidden para asegurarse de que solo se vea una imagen a la vez.
+Contenedor de imágenes: La clase .carousel-images utiliza display: flex para alinear las imágenes en una fila. La propiedad width: 400% se utiliza porque tenemos cuatro imágenes, y queremos que el ancho total sea suficiente para desplazarlas horizontalmente.
+Animación: Utilizamos @keyframes para definir una animación llamada slide. La animación cambia la propiedad transform usando translateX para mover las imágenes de izquierda a derecha. La duración es de 16 segundos, y el ciclo es infinito.
+Pausas en la animación: Las imágenes se detienen por un momento en cada posición. Esto se logra ajustando los porcentajes en la regla @keyframes. Por ejemplo, la primera imagen se muestra completamente desde el 0% hasta el 20%, y la transición a la segunda imagen comienza en el 25%.
+Este enfoque permite crear un carrusel básico de imágenes sin la necesidad de JavaScript, aunque tiene limitaciones, como la falta de interacción (por ejemplo, no se puede controlar manualmente el carrusel). Sin embargo, para una presentación automática de imágenes, es una solución elegante y sencilla. */
+
 /* iconos de google */
 span.size-40 {
     font-size: 40px;
