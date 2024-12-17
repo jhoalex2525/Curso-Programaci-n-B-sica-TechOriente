@@ -1,9 +1,9 @@
 /* Estilos generales */
-body{
-    background-color: #AC4493;    
+body {
+    background-color: #AC4493;
 }
 
-#container{
+#container {
     width: 40%;
     background-color: white;
     margin: auto;
@@ -11,24 +11,25 @@ body{
     padding: 0 20px;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
 }
 
-.colorfucsia{
+.colorfucsia {
     color: #AC4493;
 }
 
-h1,h5{
+h1,
+h5 {
     text-align: center;
 }
 
-label{
+label {
     margin: 5px 0 5px;
 }
 
-.elementoinput{
+.elementoinput {
     width: 100%;
     border-color: #AC4493;
     border-width: 1px;
@@ -38,7 +39,7 @@ label{
     border-radius: 5px;
 }
 
-.botonenviar{
+.botonenviar {
     width: 100%;
     padding: 15px;
     border-width: 1px;
@@ -47,102 +48,142 @@ label{
     color: white;
 }
 
-.obligatorios{
+.obligatorios {
     display: flex;
 }
 
-.asterisco{    
+.asterisco {
     margin: 2px 0px;
 }
 
-.asteriscoobligatorio{
+.asteriscoobligatorio {
     margin-top: 14px !important;
-}s
+}
 
-th, td{
+s th,
+td {
     text-align: start;
 }
 
-table{
+table {
     width: 100%;
     border-spacing: 12px;
 }
 
 /* Estilos imagenes */
-.imagenredonda{
+.imagenredonda {
     border-radius: 100%;
 }
 
-.imagen-perfil-centro{    
+.imagen-perfil-centro {
     display: flexbox;
-    text-align: center;    
+    text-align: center;
 }
 
-.imagen-logos-centro{    
+.imagen-logos-centro {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
 
-.logosalesforce{
+.logosalesforce {
     width: 100px;
 }
 
-.logocmmi{
+.logocmmi {
     width: 160px;
     vertical-align: auto;
 }
 
-.logocertificacionessalesforce{
+.logocertificacionessalesforce {
     width: 80px;
 }
 
-.logoceiba{
-    width: 150px;
-    vertical-align: auto;
-}
-.logoaireambiente{
-    width: 80px;
-    vertical-align: auto;
-}
-.logoprime{
-    width: 150px;
-    vertical-align: auto;
-}
-.logokyk{
+.logoceiba {
     width: 150px;
     vertical-align: auto;
 }
 
-.carousel{
+.logoaireambiente {
+    width: 80px;
+    vertical-align: auto;
+}
+
+.logoprime {
+    width: 150px;
+    vertical-align: auto;
+}
+
+.logokyk {
+    width: 150px;
+    vertical-align: auto;
+}
+
+.carousel {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-imagenes{
+.carousel-imagenes {
     display: flex;
     width: 100%;
     animation: slide 12s infinite;
 }
 
-.carousel-imagenes img{
+.carousel-imagenes img {
     width: 50%;
 }
 
-@keyframes slide{
-    0% { transform: translateX(0%); }
-    16.67% { transform: translateX(0%); } /* Cada imagen se muestra 16.67% del tiempo total */
-    16.68% { transform: translateX(-100%); }
-    33.34% { transform: translateX(-100%); }
-    33.35% { transform: translateX(-200%); }
-    50% { transform: translateX(-200%); }
-    50.01% { transform: translateX(-300%); }
-    66.67% { transform: translateX(-300%); }
-    66.68% { transform: translateX(-400%); }
-    83.34% { transform: translateX(-400%); }
-    83.35% { transform: translateX(-500%); }
-    100% { transform: translateX(-500%); }
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    16.67% {
+        transform: translateX(0%);
+    }
+
+    /* Cada imagen se muestra 16.67% del tiempo total */
+    16.68% {
+        transform: translateX(-100%);
+    }
+
+    33.34% {
+        transform: translateX(-100%);
+    }
+
+    33.35% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    50.01% {
+        transform: translateX(-300%);
+    }
+
+    66.67% {
+        transform: translateX(-300%);
+    }
+
+    66.68% {
+        transform: translateX(-400%);
+    }
+
+    83.34% {
+        transform: translateX(-400%);
+    }
+
+    83.35% {
+        transform: translateX(-500%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
 }
 
 /* Estructura HTML: El HTML es bastante sencillo. Tenemos un contenedor div con clase carousel que envuelve otro div con clase carousel-images, el cual contiene las imágenes que queremos mostrar en el carrusel.
@@ -160,11 +201,50 @@ span.size-40 {
     font-size: 40px;
     font-variation-settings: 'OPSZ' 40;
     margin: 20px 0px;
-  }
+}
 
 /* Media querys */
 @media only screen and (max-width: 800px) {
-    #container{
+    #container {
         width: 300px;
-        }
+    }
+}
+
+/* header */
+#body-menu {
+    margin: 0; /* Elimina márgenes del body */
+    padding: 0; /* Elimina padding del body */
+    height: 50px; /* Ajusta el alto del menú */
+}
+
+nav {
+    height: 100%; /* El nav ocupará todo el alto del body */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #333; /* Color de fondo */
+}
+
+ul {
+    display: flex; /* Menú horizontal */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li a {
+    display: block;
+    padding: 10px 15px; /* Ajusta el tamaño del texto */
+    text-decoration: none;
+    color: white;
+}
+
+iframe{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+main{
+    margin-top: 50px; 
 }
