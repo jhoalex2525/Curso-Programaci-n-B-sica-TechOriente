@@ -36,11 +36,7 @@
             <div>
                 <label for="phone">Teléfono</label>
                 <input class="elementoinput" type="text" name="phone" id="phone" placeholder="Escribe tu teléfono">
-            </div>
-            <div>
-                <label for="web">Sitio web</label>
-                <input class="elementoinput" type="url" name="web" id="web" placeholder="Escribe la URL de tu web">
-            </div>
+            </div>            
             <div>
                 <div class="obligatorios">
                     <label for="subject">Asunto<span class="colorfucsia">*</span></label>
@@ -57,10 +53,7 @@
             </div>
             <div>
                 <input class="botonenviar" type="submit" value="ENVIAR">
-            </div>
-            <div>
-                <button type="submit">Enviar2</button>
-            </div>
+            </div>           
             <div class="obligatorios">
                 <p><span class="colorfucsia">*</span>Los campos son obligatorios.</p>
             </div>
@@ -72,8 +65,7 @@
                 const formData = {
                     nombre: document.getElementById('name').value,
                     email: document.getElementById('email').value,
-                    telefono: document.getElementById('phone').value,
-                    sitioWeb: document.getElementById('web').value,
+                    telefono: document.getElementById('phone').value,                    
                     asunto: document.getElementById('subject').value,
                     mensaje: document.getElementById('message').value
                 };
