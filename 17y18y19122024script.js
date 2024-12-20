@@ -125,3 +125,9 @@ let boton1 = document.getElementById('boton1');
 boton1.addEventListener('click', function(){
     alert("Hiciste clic");
 });
+
+function saludar (nombre){
+    return("Hola " + nombre + "!")
+}
+let mensaje = saludar("Ana");
+console.log(mensaje);
