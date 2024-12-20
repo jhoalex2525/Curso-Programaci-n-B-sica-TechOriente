@@ -20,8 +20,7 @@ body {
     color: #AC4493;
 }
 
-h1,
-h5 {
+h1, h5 {
     text-align: center;
 }
 
@@ -48,8 +47,7 @@ label {
     color: white;
 }
 
-s th,
-td {
+th, td {
     text-align: start;
 }
 
@@ -66,12 +64,6 @@ table {
 .imagen-perfil-centro {
     display: flexbox;
     text-align: center;
-}
-
-.imagen-logos-centro {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
 }
 
 .logosalesforce {
@@ -108,70 +100,52 @@ table {
 }
 
 .carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-imagenes {
     display: flex;
-    width: 100%;
-    animation: slide 12s infinite;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
 }
 
-.carousel-imagenes img {
-    width: 50%;
+.carousel-track {
+    display: flex;
+    justify-content: center; /* Centra las imágenes dentro del track */
+    transition: transform 0.5s ease-in-out;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
+.carousel-track img {
+    flex-shrink: 0;
+    height: 100%;
+    max-height: 300px;
+    width: 100%; /* Cada imagen ocupa todo el ancho del carrusel */
+    object-fit: contain;
+}
 
-    16.67% {
-        transform: translateX(0%);
-    }
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
 
-    /* Cada imagen se muestra 16.67% del tiempo total */
-    16.68% {
-        transform: translateX(-100%);
-    }
+button:hover, button:focus {
+    background: rgba(0, 0, 0, 0.7);
+    outline: none;
+}
 
-    33.34% {
-        transform: translateX(-100%);
-    }
-
-    33.35% {
-        transform: translateX(-200%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    50.01% {
-        transform: translateX(-300%);
-    }
-
-    66.67% {
-        transform: translateX(-300%);
-    }
-
-    66.68% {
-        transform: translateX(-400%);
-    }
-
-    83.34% {
-        transform: translateX(-400%);
-    }
-
-    83.35% {
-        transform: translateX(-500%);
-    }
-
-    100% {
-        transform: translateX(-500%);
-    }
+button.prev {
+    left: 0;
+ }
+  
+button.next {
+    right: 0;
 }
 
 /* iconos de google */
@@ -184,26 +158,34 @@ span.size-40 {
 /* Media querys */
 @media only screen and (max-width: 800px) {
     #container {
-        width: 300px;
+        width: 80%;
+        min-width: 300px;
     }
 }
 
 /* header */
 #body-menu {
-    margin: 0; /* Elimina márgenes del body */
-    padding: 0; /* Elimina padding del body */
-    height: 50px; /* Ajusta el alto del menú */
+    margin: 0;
+    /* Elimina márgenes del body */
+    padding: 0;
+    /* Elimina padding del body */
+    height: 50px;
+    /* Ajusta el alto del menú */
 }
 
 nav {
-    height: 100%; /* El nav ocupará todo el alto del body */
+    height: 100%;
+    /* El nav ocupará todo el alto del body */
     display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
-    background-color: #333; /* Color de fondo */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    background-color: #333;
+    /* Color de fondo */
 }
 
 ul {
-    display: flex; /* Menú horizontal */
+    display: flex;
+    /* Menú horizontal */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -211,18 +193,19 @@ ul {
 
 li a {
     display: block;
-    padding: 10px 15px; /* Ajusta el tamaño del texto */
+    padding: 10px 15px;
+    /* Ajusta el tamaño del texto */
     text-decoration: none;
     color: white;
 }
 
-iframe{
+iframe {
     height: 50px;
     width: 100%;
     position: fixed;
     z-index: 1000;
 }
 
-main{
-    margin-top: 50px; 
+main {
+    margin-top: 50px;
 }
