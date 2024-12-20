@@ -158,7 +158,7 @@ span.size-40 {
 /* Media querys */
 @media only screen and (max-width: 800px) {
     #container {
-        width: 80%;
+        width: 40%;
         min-width: 300px;
     }
 }
